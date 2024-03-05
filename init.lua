@@ -1,2 +1,1 @@
-require("fruitninjaking.remap")
-require("fruitninjaking.set")
+require("fruitninjaking")
