@@ -1,7 +1,7 @@
 # Dependencies to install for workflow
 
-# Packer package manager
-https://github.com/wbthomason/packer.nvim
+# notes to self
+change color scheme in fruitninjaking/init.lua
 
 # ripgrep
 https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
@@ -10,5 +10,3 @@ https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
 for mason to work install
     sudo apt install zip
     sudo apt install unzip
-
-
