@@ -3,4 +3,4 @@ require("fruitninjaking.set")
 
 require("fruitninjaking.lazy_init")
 
-vim.cmd("colorscheme synthweave")
+require("fruitninjaking.colors")
