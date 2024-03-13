@@ -1,4 +1,4 @@
-vim.cmd("colorscheme everforest")
+vim.cmd("colorscheme tokyonight")
 
 -- Load lazy.nvim
 local lazy = require("lazy")
