@@ -10,7 +10,7 @@ return {
 
       local ascii = require('fruitninjaking.lazy.ascii.ascii')
 
-      dashboard.section.header.val = ascii['hydra']
+      dashboard.section.header.val = ascii['anime']
 
       dashboard.section.buttons.val = {
         dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
