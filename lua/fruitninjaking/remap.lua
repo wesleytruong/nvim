@@ -8,3 +8,6 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- lets you yank into clipboard
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+-- repeats macro in q register
+vim.keymap.set("n", "Q", "@q")
