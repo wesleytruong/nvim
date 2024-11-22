@@ -11,3 +11,5 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- repeats macro in q register
 vim.keymap.set("n", "Q", "@q")
+
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { noremap = true, silent = true })
