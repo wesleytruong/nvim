@@ -2,15 +2,11 @@ return {
   {
     "nvim-telescope/telescope.nvim",
 
-    tag = "0.1.8",
+    tag = "0.1.6",
 
     dependencies = {
       "nvim-lua/plenary.nvim",
       -- "andrew-george/telescope-themes",
-      {
-        'nvim-telescope/telescope-fzf-native.nvim',
-        build = 'make',
-      },
       "nvim-telescope/telescope-ui-select.nvim",
     },
 
@@ -44,10 +40,8 @@ return {
             require("telescope.themes").get_dropdown {
             }
           },
-          fzf = {}
         }
       })
-      require('telescope').load_extension('fzf')
       require("telescope").load_extension("ui-select")
     end
   },
