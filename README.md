@@ -1,7 +1,7 @@
 # README
 
 ## notes to self
-- change color scheme in fruitninjaking/colors.lua
+- change color scheme in current-theme.lua
 
 ## Dependencies to install for workflow
 - ripgrep
