@@ -6,7 +6,7 @@ return {
 
     dependencies = {
       "nvim-lua/plenary.nvim",
-      -- "andrew-george/telescope-themes",
+      "andrew-george/telescope-themes",
       {
         'nvim-telescope/telescope-fzf-native.nvim',
         build = 'make',
@@ -16,10 +16,11 @@ return {
 
     config = function()
       local builtin = require('telescope.builtin')
-      -- vim.keymap.set('n', '<leader>cc', function()
-      --   require("lazy").load('*')
-      --   builtin.colorscheme({ enable_preview = true })
-      -- end)
+      vim.keymap.set('n', '<leader>cc', function()
+        vim.cmd('Lazy load all')
+        -- builtin.colorscheme({ enable_preview = true })
+        vim.cmd('Telescope themes')
+      end)
       vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
       vim.keymap.set('n', '<c-p>', builtin.git_files, {})
       vim.keymap.set('n', '<leader>pws', function()
@@ -44,7 +45,13 @@ return {
             require("telescope.themes").get_dropdown {
             }
           },
-          fzf = {}
+          fzf = {},
+          themes = {
+            enable_live_preview = true,
+            persist = {
+              path = vim.fn.stdpath("config") .. "/lua/fruitninjaking/colors.lua"
+            }
+          }
         }
       })
       require('telescope').load_extension('fzf')
